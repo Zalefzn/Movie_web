@@ -1,0 +1,170 @@
+:root{
+    --color1 : white;
+    --color2 : black;
+    --color3 : red;
+}
+
+
+/*header image*/
+.header-content{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content .image-content .background img{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: -1;
+}
+   
+/*pict here*/
+.movie-pict{
+    margin: auto;
+    position: absolute;
+}
+
+.movie-pict .pict img{
+    height: 35%;
+    width: 35%;
+    margin-left: 58%;
+    margin-top: 12%;
+    animation-name: movie;
+    animation-duration: 2s;
+}
+
+
+/*navbar content */
+.navbar-content{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    padding: 1%;
+}
+
+.navbar-content .navbar ul li{
+    float: right;
+    display: inline;
+    margin-right: 4%;
+    font-size: 18px;
+    margin-top: 2%;
+}
+
+.navbar-content .navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.navbar-content .navbar ul li a:hover{
+    text-decoration: none;
+    color:var(--color3);
+    font-weight: bold;
+}
+
+/*logo content*/
+.logo-content{
+    margin: auto;
+    padding: 0;
+    margin-left: 5%;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.logo-content .logo{
+    position: relative;
+    
+}
+
+.logo-content .logo #header1{
+    margin: auto;
+    color: var(--color1);
+  
+}
+
+/* text content */
+.text-content{
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.text-content .text{
+    text-align: left;
+    color: var(--color3);
+    font-size: 23px;
+    animation-name: example;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+}
+
+.text-content .desc{
+    text-align: left;
+    color: var(--color1);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    animation-name: example;
+    animation-duration: 2s;
+   
+}
+
+.button-navigate{
+    margin: auto;
+    padding: 0px 55px;
+}
+
+.button-navigate .button{ 
+        background-color: var(--color3);
+        border: none;
+        padding: 4px 30px;
+        display: inline-block;
+        margin: 10px 10px;
+        cursor: pointer;
+        border-radius: 30px;
+}
+
+.button-navigate .button{ 
+        background-color: var(--color3);
+        border: none;
+        padding: 3px 30px;
+        display: inline-block;
+        margin: 10px 10px;
+        cursor: pointer;
+        border-radius: 30px;
+}
+
+.button-navigate .button a{
+    color: var(--color1);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes example {
+    0%   {
+        color: var(--color3);
+    }
+    25%  {
+        color: var(--color1);
+        font-size: 25px;
+    }
+}
+
+@keyframes movie {
+    0%{
+        height: 35%;
+        width: 35%;
+        opacity: 1;
+    }
+    25%{
+        height: 40%;
+        width: 40%;
+        opacity: 0.2;
+    }
+}
